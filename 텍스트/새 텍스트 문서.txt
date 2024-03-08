@@ -1,0 +1,32 @@
+
+해당하는 디렉토리에만 git 파일 생성..? 범위를 벗어나는 파일에 git 있을시 사용이 불가?
+
+git 파일에 config은 설정 파일임
+컴퓨터 파일 찾기 자격 증명 관리자 검색 이동
+사용하는 컴퓨터를 옮길시 여기서 등록을 해야하고 삭제를 해야함..?
+
+!!보안 때문에 컨트롤 복사 단축키 적용 안됨!! 마우스로 카피 넣기 해야됨!!
+사용자 등록 
+해당 컴퓨터에는 1번만 등록하면됨
+git config --global user.name "hwan9207"
+git config --global user.email yyyjjjhhh13@gmail.com 
+git remote add origin https://github.com/hwan9207/java11_basic.git  = git remote add origin 깃허브레포시터리주소
+	    								
+순으로 설정해주고 
+만약에 마스터 표시 안나오고 safe 어쩌고 주소 나오면 그거 복사하고 설정
+
+
+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 >> 이거는 한번만 보여준다고함 치사함
+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 >새로 받은 토큰 주소
+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 > 또 받은 토큰 주소
+
+config 파일에서 [remote "origin"]
+url = https://hwan9207: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@github.com/hwan9207/java1 
+
+git add . - 수정 한 파일들 업로드? 메모리에 작업한걸 업로드 
+
+git commit -m "java 11 installation & variable & operation" - 작업한..?
+
+
+
+

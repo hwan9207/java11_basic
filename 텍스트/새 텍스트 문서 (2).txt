@@ -1,0 +1,23 @@
+----git bash 최초 설치시 명령-----
+
+git config --global user.name "hwan9207"
+git config --global user.email yyyjjjhhh13@gmail.com 
+
+
+----새로운 레포시터리를 만드는 경우 명령-----
+
+해당 디렉토리로 이동 ex) (cd d: , cd yu , cd java)
+
+git init
+cd
+git remote add origin 깃허브레포시터리주소
+
+config 파일에 토큰 등록
+
+
+-----매 작업시 명령------
+git add  .
+git commit -m "commit message"
+
+git push -u origin master
+
