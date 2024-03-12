@@ -1,0 +1,83 @@
+
+보충자료실
+OracleXE213_Win64.zip 다운
+압축풀고
+setup.exe 관리자 권한으로 실행
+
+다음-다음-동의-비번:1234-설치
+
+설치화면 캡쳐후 그림판에 저장
+
+* Well-known Port
+포트 번호는 해당 시스템이나 서비스마다 다름
+널리 알려진 포트 번호에는 21번(FTP), 22번(SSH), 23번(telnet), 25번(SMTP), 53번(DNS), 80번(http), 110번(POP3), 143번(IMAP), 194번(IRC), 443번(https) 등이 있음
+ ex)  ftp://000.000.000.000:21
+      http://000.000.000.000:80
+      참고로 오라클은 1521번
+데이터 베이스를 여러명이 사용할 수 있다.
+
+
+- sql 테이블 만들어보기
+
+오라클 설치 다 되면 cmd 열기
+sqlplus 입력
+사용자명 : system
+비밀번호 입력 : 1234
+
+	사용자명 입력: system
+	비밀번호 입력:
+	마지막 성공한 로그인 시간: 화 3월  12 2024 12:50:49 +09:00
+
+	다음에 접속됨:
+	Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
+	Version 21.3.0.0.0
+
+이렇게 나오면 정상
+
+
+SQL>create table tmp1(no int primary key, name varchar(20), point int);
+SQL>insert into tmp1 values(1, '김민아', 95);
+SQL>insert into tmp1 values(2, '김아무개', 20);
+SQL>insert into tmp1 values(3, '이아무개', 70);
+SQL>insert into tmp1 values(4, '장아무개', 40);
+SQL>insert into tmp1 values(5, '이기태', 85);
+SQL>insert into tmp1 values(6, '김민아', 90);
+
+
+SQL> sel=ect * from tmp1;         <--테이블에 들어간 데이터 볼 수 있음
+
+        NO NAME                                          POINT
+---------- ---------------------------------------- ----------
+         1 김민아                                           95
+         2 김아무개                                         20
+         3 이아무개                                         70
+         4 장아무개                                         40
+         5 이기태                                           85
+         6 김민아                                           90
+
+6 행이 선택되었습니다.
+
+SQL> commit;			<--꼭 커밋해주기
+커밋이 완료되었습니다. 		(나중에 tmp1테이블을 자바에 불러올거임)
+
+
+
+
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Oracle - OraDB21Home1\응용 프로그램 개발
+SQL plus 더블클릭하면 바로 사용자 명 부터 나옴
+마찬가지로 system, 1234 입력하고 테이블 조회하면 tmp1 테이블 잘 뜨는거 확인
+
+C:\app\user1\product\21c\dbhomeXE\jdbc\lib //여기있는 라이브러리중에 버전에 맞는거 찾아서 자바로 끌고와야함
+
+test19 만들고 org.kh.db 패키지 만들기
+test19 - new - folder 들어가서
+lib 입력해서 만들고
+C:\app\user1\product\21c\dbhomeXE\jdbc\lib에 있던 라이브러리 중에서 
+ojdbc8.jar 드래그하고 copy 하기
+
+외부 라이브러리
+bild path - configure bild path - modulepath - add external JARs.. - ojdbc8.jar - applay
+
+
+
+

@@ -35,7 +35,7 @@ public class CalendarExam {
 		
 		String[] wk = {"", "일", "월", "화", "수", "목", "금", "토", "일"};
 		System.out.println("오늘은 "+wk[dow]+"요일 입니다.");
-		
+		System.out.println(timeZone);
 		
 	}
 

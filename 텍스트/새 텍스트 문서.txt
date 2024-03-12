@@ -10,8 +10,8 @@ git 파일에 config은 설정 파일임
 해당 컴퓨터에는 1번만 등록하면됨
 git config --global user.name "hwan9207"
 git config --global user.email yyyjjjhhh13@gmail.com 
-git remote add origin https://github.com/hwan9207/java11_basic.git  = git remote add origin 깃허브레포시터리주소
-	    								
+git remote add origin https://github.com/hwan9207/java11_basic.git   
+	    							
 순으로 설정해주고 
 만약에 마스터 표시 안나오고 safe 어쩌고 주소 나오면 그거 복사하고 설정
 
