@@ -28,7 +28,7 @@ public class Test2 {
 				System.out.println("<<입력 종료>>");
 				//return; 리턴 해줄게 없고.. 모든 이름 출력을 해야하니 아니면 여기서 포문 사용해서 출력을 하거나?
 				//return; = false , exit가 입력 될 경우 반복출력을 실행하지 못하고 main 함수의 밖으로 나가버림
-				break;
+				 break; 
 			}
 			if(nameList.contains(name)) {
 				System.out.println("<이미 존재하는 이름입니다.>");

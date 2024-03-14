@@ -29,7 +29,6 @@ public class HashtableExam {
 		Set<String> keySet = hash.keySet();
 		System.out.println("hash의 키 : "+keySet);
 //		Set<String> ValueSet = hash.ValueSet(); // ValueSet은 없는건가..
-//		System.out.println("hash의 키 : "+keySet);
 		
 		//hash table에서 키가 "대구" 인 요소 제거
 		hash.remove("대구");

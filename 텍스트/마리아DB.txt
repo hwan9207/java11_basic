@@ -1,0 +1,24 @@
+마리아DB 다운후 내pc 환경 설정 
+시스템 변수 > path %MARIA_Home%\bin 편집 추가
+
+cmd 관리자 권한으로 실행
+
+d: cd yu 으로 이동 후 
+
+mysql -u root -p 입력하면 
+비번 입력창 나옴
+
+create database 데이터베이스명; 
+
+create table 테이블명(no int primary key, name varchar(50), point int);
+
+use 데이버베이스명;  >> 사용한다고 불러온다
+select * from 테이블명;  저장(table)한거 불러오는 방식.. 
+
+show databases; >> 데이터베이스 종류 현황 확인가능
+
+drop database student;
+
+insert into 테이블명 values();
+
+

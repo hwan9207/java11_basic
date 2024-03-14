@@ -69,7 +69,7 @@ public class MapExam {
 		
 		//map3 배열의 값을 TreeMap3에 대입
 		String[] names = {"유정환","최여명","박경진","이은진","김지우","김경룡","이동근","이혁준","손준혁","강승영"};
-		for(int i=0;i<=9;i++) {
+		for(int i=0;i<names.length;i++) {
 			map3.put(i, names[i]);
 		}
 		System.out.println();

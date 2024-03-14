@@ -24,7 +24,7 @@ public class ArrayListExam {
 		
 		Member tmp1 = new Member(11, "kang", "abcd1004", "이성하", 0);
 //		memList.add(tmp1);
-		System.out.println(tmp1.getId() + "의 존재유무 : "+ memList.contains(tmp1.getId())); //memList tmp1 둘 다 kang 있는데? 왜 false?
+		System.out.println(tmp1.getId() + "의 존재유무 : "+ memList.contains(tmp1)); //memList tmp1 둘 다 kang 있는데? 왜 false?
 		System.out.println();													 // memList 안에 tmp1이 있느냐 ?	그럼 contains는 값 비교가 아니고 객체 주소값 비교?
 		System.out.println(memList.get(9));							
 		System.out.println(tmp1);
