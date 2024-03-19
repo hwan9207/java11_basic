@@ -58,10 +58,11 @@ public class FoodExam {
 	void remove() {
 		System.out.print("삭제하고 싶은 음식 입력 : ");
 		String fName = sc.next();
-		for(Food f:fList) {
-			if(f.getName().equals(fName)) {
-				fList.remove(fName);
-				System.out.println(f.toString());
+		for(int i=0; i<fList.size(); i++) {
+			Food fd = fList.get(i);
+			if(fList.get(i).getName().equals(fName)) {
+				System.out.println(fd.toString()+"이 삭제 되었습니다.");
+				fList.remove(i);
 			}
 		}
 		//fList.remove(fName); // 입력하는 객체에 접근 불가능..
